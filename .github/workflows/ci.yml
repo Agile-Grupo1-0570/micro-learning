@@ -1,0 +1,48 @@
+name: CI Static Page
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Descarga el contenido del repositorio en el runner.
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      # La página principal debe existir en la raíz del proyecto.
+      - name: Verificar index.html
+        run: test -f index.html
+
+      # Si estas rutas existen, confirma que sean directorios.
+      - name: Verificar carpetas opcionales
+        run: |
+          for directory in css js; do
+            if [ -e "$directory" ] && [ ! -d "$directory" ]; then
+              echo "::error::$directory existe, pero no es una carpeta."
+              exit 1
+            fi
+
+            if [ -d "$directory" ]; then
+              echo "Carpeta $directory encontrada."
+            else
+              echo "Carpeta opcional $directory no presente."
+            fi
+          done
+
+      # Muestra los archivos y carpetas principales, omitiendo metadatos de Git.
+      - name: Listar estructura del repositorio
+        run: find . -maxdepth 2 -not -path "./.git*" -print | sort
+
+      - name: Confirmar validación
+        run: echo "La validación básica terminó correctamente."
