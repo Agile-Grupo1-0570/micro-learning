@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Capacitación breve para reconocer señales de riesgo en correos sospechosos."
+    />
+    <meta name="theme-color" content="#0b1f3a" />
+    <title>SocialShield Training | Capacitación de seguridad digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SocialShield Training, inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path
+              d="M12 2.75 19 5.6v5.55c0 4.46-2.85 8.48-7 10.1-4.15-1.62-7-5.64-7-10.1V5.6l7-2.85Z"
+            />
+            <path d="m8.75 12 2.05 2.05 4.45-4.45" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>SocialShield</strong>
+          <span>Training</span>
+        </span>
+      </a>
+
+      <span class="header-badge">Micro-learning</span>
+    </header>
+
+    <main class="page-shell">
+      <!-- Encabezado principal de la capacitación. -->
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+          Simulación educativa autorizada
+        </div>
+
+        <h1 id="page-title">Capacitación rápida de seguridad digital</h1>
+        <p class="hero__intro">
+          El enlace que te trajo hasta aquí formaba parte de una simulación
+          controlada. No se comprometió tu información. Dedica unos minutos a
+          revisar las señales que ayudan a detectar correos sospechosos.
+        </p>
+
+        <div class="training-meta" aria-label="Información de la capacitación">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8.5" />
+              <path d="M12 7.5v5l3 1.75" />
+            </svg>
+            Duración aproximada: 3 minutos
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 11.25 10.25 14.5 17 7.75" />
+              <circle cx="12" cy="12" r="8.5" />
+            </svg>
+            Contenido de concientización
+          </span>
+        </div>
+      </section>
+
+      <!-- Video educativo. Cambia únicamente el atributo src para usar otro video. -->
+      <section class="content-card video-section" aria-labelledby="video-title">
+        <div class="section-heading">
+          <span class="step-number" aria-hidden="true">01</span>
+          <div>
+            <p class="section-kicker">Primero</p>
+            <h2 id="video-title">Mira este breve video</h2>
+          </div>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Video educativo sobre seguridad digital"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="video-caption">
+          Observa cómo pequeños detalles pueden revelar un intento de engaño.
+        </p>
+      </section>
+
+      <!-- Lista de señales de alerta. -->
+      <section class="signals-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <span class="step-number" aria-hidden="true">02</span>
+          <div>
+            <p class="section-kicker">Después</p>
+            <h2 id="signals-title">Reconoce estas 4 señales de alerta</h2>
+          </div>
+        </div>
+
+        <div class="signals-grid">
+          <article class="signal-card">
+            <span class="signal-card__number">01</span>
+            <div class="signal-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7.5 12 13l8-5.5" />
+                <rect x="3.5" y="5.5" width="17" height="13" rx="2" />
+                <path d="m16.5 5.5 2-2m0 2-2-2" />
+              </svg>
+            </div>
+            <h3>Remitente inesperado</h3>
+            <p>
+              Revisa con atención el nombre y el dominio. Una letra diferente
+              puede ocultar una dirección falsa.
+            </p>
+          </article>
+
+          <article class="signal-card">
+            <span class="signal-card__number">02</span>
+            <div class="signal-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7.25v5.25m0 3.75v.25" />
+              </svg>
+            </div>
+            <h3>Urgencia o presión</h3>
+            <p>
+              Desconfía de amenazas, premios o plazos extremos que intentan
+              hacerte actuar sin pensar.
+            </p>
+          </article>
+
+          <article class="signal-card">
+            <span class="signal-card__number">03</span>
+            <div class="signal-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M9.25 14.75 14.75 9.25" />
+                <path
+                  d="m7.5 16.5-1 1a2.83 2.83 0 0 1-4-4l3-3a2.83 2.83 0 0 1 4 0"
+                />
+                <path
+                  d="m16.5 7.5 1-1a2.83 2.83 0 0 1 4 4l-3 3a2.83 2.83 0 0 1-4 0"
+                />
+              </svg>
+            </div>
+            <h3>Enlaces dudosos</h3>
+            <p>
+              Antes de hacer clic, verifica el destino del enlace. No confíes
+              solo en el texto visible.
+            </p>
+          </article>
+
+          <article class="signal-card">
+            <span class="signal-card__number">04</span>
+            <div class="signal-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M8.5 10V7.5a3.5 3.5 0 0 1 7 0V10m-9 0h11v9h-11z"
+                />
+                <path d="M12 13.25v2.5" />
+              </svg>
+            </div>
+            <h3>Solicitud de datos</h3>
+            <p>
+              Nunca compartas contraseñas, códigos o información sensible por
+              un correo no verificado.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Acción final. JavaScript controla el estado completado. -->
+      <section class="content-card completion-section" aria-labelledby="completion-title">
+        <div class="completion-section__content">
+          <span class="completion-section__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 12.5 9.25 17 19 7" />
+            </svg>
+          </span>
+          <div>
+            <p class="section-kicker">Para terminar</p>
+            <h2 id="completion-title">Confirma tu aprendizaje</h2>
+            <p>
+              Al confirmar, quedará registrado en este navegador que completaste
+              la capacitación.
+            </p>
+          </div>
+        </div>
+
+        <div class="completion-section__action">
+          <button id="completionButton" class="completion-button" type="button">
+            <span class="completion-button__default">Confirmar finalización</span>
+            <span class="completion-button__done" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12.5 9.25 17 19 7" />
+              </svg>
+              Completado
+            </span>
+          </button>
+          <p
+            id="completionMessage"
+            class="completion-message"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Capacitación finalizada correctamente.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>SocialShield Training</p>
+      <span aria-hidden="true"></span>
+      <p>Programa de concientización en seguridad digital</p>
+    </footer>
+  </body>
+</html>
