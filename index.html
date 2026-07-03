@@ -66,7 +66,10 @@
         </div>
       </section>
 
-      <!-- Video educativo. Cambia únicamente el atributo src para usar otro video. -->
+      <!--
+        Video educativo local. Para reemplazarlo en el futuro, cambia la ruta
+        del atributo src y conserva un formato compatible como MP4 (H.264/AAC).
+      -->
       <section class="content-card video-section" aria-labelledby="video-title">
         <div class="section-heading">
           <span class="step-number" aria-hidden="true">01</span>
@@ -77,14 +80,16 @@
         </div>
 
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Video educativo sobre seguridad digital"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <video
+            controls
+            preload="metadata"
+            playsinline
+            aria-label="Video educativo sobre seguridad digital"
+          >
+            <source src="assets/Capacitacion.mp4" type="video/mp4" />
+            Tu navegador no puede reproducir este video.
+            <a href="assets/Capacitacion.mp4">Abrir el video directamente</a>.
+          </video>
         </div>
         <p class="video-caption">
           Observa cómo pequeños detalles pueden revelar un intento de engaño.
